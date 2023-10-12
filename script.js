@@ -19,7 +19,6 @@ const gameOver = () => {
 
 document.querySelector('.check').addEventListener('click', () => {
   let guess = Number(document.querySelector('.guess').value);
-  console.log(guess, typeof guess);
   if (!guess) {
     displayMessage('Type a number'); // Lorsque le champ est vide
   } else if (guess === secretNumber) {
